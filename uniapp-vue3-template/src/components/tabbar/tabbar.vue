@@ -8,22 +8,28 @@
 			@change="switchTabBar(tabBar)"
 		>
 			<wd-tabbar-item icon="home" name="home" title="首页"></wd-tabbar-item>
-			<wd-tabbar-item icon="cart" name="cart" title="分类"></wd-tabbar-item>
-			<wd-tabbar-item icon="setting" name="setting" title="设置"></wd-tabbar-item>
-			<wd-tabbar-item icon="user" name="user" title="我的"></wd-tabbar-item>
+			<wd-tabbar-item icon="hall" name="hall" title="大厅"></wd-tabbar-item>
+			<wd-tabbar-item icon="about" name="about" title="关于"></wd-tabbar-item>
+			<wd-tabbar-item icon="mine" name="mine" title="我的"></wd-tabbar-item>
 		</wd-tabbar>
 	</view>
 </template>
 
 <script lang="ts" setup>
+	// 根据 name 来匹配
 	const tabBar = ref('home')
 
+	// 切换 tabbar 方法
 	function switchTabBar(params) {
 		console.log(params)
+
 		uni.switchTab({
-			url: 'pages/index/index',
-			success: () => {
-				console.log('switchTab Success')
+			url: `/pages/${params}/${params}`,
+			success: (success) => {
+				console.log(success)
+			},
+			fail: (error) => {
+				console.log(error)
 			},
 		})
 	}

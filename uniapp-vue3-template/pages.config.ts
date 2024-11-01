@@ -37,8 +37,22 @@ export default defineUniPages({
 			{
 				iconPath: 'static/tabbar/example.png',
 				selectedIconPath: 'static/tabbar/exampleHL.png',
+				pagePath: 'pages/hall/hall',
+				text: '大厅',
+				visible: false,
+			},
+			{
+				iconPath: 'static/tabbar/example.png',
+				selectedIconPath: 'static/tabbar/exampleHL.png',
 				pagePath: 'pages/about/about',
 				text: '关于',
+				visible: false,
+			},
+			{
+				iconPath: 'static/tabbar/example.png',
+				selectedIconPath: 'static/tabbar/exampleHL.png',
+				pagePath: 'pages/mine/mine',
+				text: '我的',
 				visible: false,
 			},
 		],

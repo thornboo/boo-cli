@@ -25,9 +25,11 @@
 			</span>
 		</view>
 	</view>
+	<TabBar />
 </template>
 
 <script lang="ts" setup>
+	import TabBar from '../../components/tabbar/tabbar.vue'
 	// 获取屏幕边界到安全区域距离
 	const { safeAreaInsets } = uni.getSystemInfoSync()
 </script>
