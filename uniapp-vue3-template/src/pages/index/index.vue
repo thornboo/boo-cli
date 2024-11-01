@@ -45,24 +45,24 @@
 
 	.container {
 		display: flex;
-		height: 100%;
 		width: 100%;
+		height: 100%;
 	}
 
 	.loading-style-index {
-		align-items: center;
 		display: flex;
+		align-items: center;
 		justify-content: center;
 	}
 
 	.back-image {
-		height: 100vh; // vh表示视口高度的百分比
 		width: 100%;
+		height: 100vh; // vh表示视口高度的百分比
 	}
 
 	.back-error {
+		width: 100%;
 		height: 50vh;
 		object-fit: cover;
-		width: 100%;
 	}
 </style>
