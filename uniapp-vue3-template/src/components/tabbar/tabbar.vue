@@ -19,10 +19,8 @@
 	// 根据 name 来匹配
 	const tabBar = ref('home')
 
-	// 切换 tabbar 方法
+	// 切换 TabBar 方法
 	function switchTabBar(params) {
-		console.log(params)
-
 		uni.switchTab({
 			url: `/pages/${params}/${params}`,
 			success: (success) => {
